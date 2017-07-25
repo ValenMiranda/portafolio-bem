@@ -1,4 +1,86 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background-color: $azul;
+}
+
+//estilos menu
+.menu{
+	background-color: $rojo;
+	width: 100%;
+	text-align: center!important;
+}
+
+.a-menu{
+	&__item{
+		margin-right: 20px;
+		margin-bottom: 20px;
+		color: white;
+		display: inline-block;	
+		&__link{
+			color: $gris_claro;
+			text-decoration: none;
+			padding: 20px;
+			&:hover{
+				@include hover;
+			}
+		}
+	}
+}
+
+.a-menu__item__active{
+	@include hover;
+	text-decoration: none;
+}
+
+.a-menu__item__image{
+	text-decoration: none;
+	width: 10%;
+	margin-top: 20px;
+}
+
+.info{
+	&__circle{
+		background-color: $gris_claro;
+		width: 20%;
+		text-align: center;
+		border-radius: 100%;
+		height: 235px;
+		float: left;
+		margin: 0px 50px 50px 320px;
+		&__mini{
+			margin-top: 90px;
+			font-size: 2.5em;
+			font-weight: bolder;
+		}
+	}
+	&__description{
+		margin-top: 50px;
+		margin-right: 250px;
+		color: white;
+		&__title{
+			color: $verde;
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+		&__subtitle{
+			margin-bottom: 30px;
+		}
+		&__resume{
+			padding: 20px 220px 20px 20px;
+		}
+		button{
+			background-color: $verde;
+			border: none;
+			border-radius: 30px;
+			color: $gris_claro;
+			padding: 10px 30px;
+			font-size: 1.5em;
+			margin: 20px 0;
+		}
+	}
 }
