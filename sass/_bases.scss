@@ -9,38 +9,37 @@ body{
 }
 
 //estilos menu
-.menu{
+header{
 	background-color: $rojo;
-	width: 100%;
-	text-align: center!important;
-}
-
-.a-menu{
-	&__item{
-		margin-right: 20px;
-		margin-bottom: 20px;
-		color: white;
-		display: inline-block;	
-		&__link{
-			color: $gris_claro;
-			text-decoration: none;
-			padding: 20px;
-			&:hover{
-				@include hover;
+	.menu{
+		text-align: center;
+		margin: 0 auto;
+		width: 70%;
+		&__item{
+			display: inline-block;
+			list-style: none;
+			i{
+				padding-right: 10px;
+			}
+			&__link--image{
+				width: 90px;
+			}
+			&__link{
+				text-decoration: none;
+				color: $gris_claro;
+				padding: 10px 20px;
+				margin: 0 30px;
+			}
+			&__link:hover{
+				text-decoration: none;
+				color: $azul;
+			}
+			&__link--active{
+				background-color: $azul;
+				border-radius: 20px;
 			}
 		}
 	}
-}
-
-.a-menu__item__active{
-	@include hover;
-	text-decoration: none;
-}
-
-.a-menu__item__image{
-	text-decoration: none;
-	width: 10%;
-	margin-top: 20px;
 }
 
 .info{
@@ -83,4 +82,37 @@ body{
 			margin: 20px 0;
 		}
 	}
+}
+
+.social {
+    height: 60px;
+    text-align: center;
+    margin: 50px auto;
+    .fa-2x {
+        color: $gris_claro;
+    }
+    .fa-facebook {
+        @include redes-sociales();
+        background-color: $facebook;
+    }
+    .fa-twitter {
+        @include redes-sociales();
+        background-color: $twitter;
+    }
+    .fa-google-plus {
+        @include redes-sociales();
+        background-color: $google;
+    }
+    .fa-pinterest-p {
+        @include redes-sociales();
+        background-color: $pinterest;
+    }
+    .fa-stumbleupon {
+        @include redes-sociales();
+        background-color: $stumbleupon;
+    }
+    .fa-dribbble {
+        @include redes-sociales();
+        background-color: $dribbble;
+    }
 }

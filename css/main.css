@@ -8,37 +8,30 @@
 body {
   background-color: #203748; }
 
-.menu {
-  background-color: #F04949;
-  width: 100%;
-  text-align: center !important; }
-
-.a-menu__item {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  color: white;
-  display: inline-block; }
-  .a-menu__item__link {
-    color: #EFEFEF;
-    text-decoration: none;
-    padding: 20px; }
-    .a-menu__item__link:hover {
-      color: #EFEFEF;
-      background-color: #203748;
-      border-radius: 20px;
-      padding: 10px 20px; }
-
-.a-menu__item__active {
-  color: #EFEFEF;
-  background-color: #203748;
-  border-radius: 20px;
-  padding: 10px 20px;
-  text-decoration: none; }
-
-.a-menu__item__image {
-  text-decoration: none;
-  width: 10%;
-  margin-top: 20px; }
+header {
+  background-color: #F04949; }
+  header .menu {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%; }
+    header .menu__item {
+      display: inline-block;
+      list-style: none; }
+      header .menu__item i {
+        padding-right: 10px; }
+      header .menu__item__link--image {
+        width: 90px; }
+      header .menu__item__link {
+        text-decoration: none;
+        color: #EFEFEF;
+        padding: 10px 20px;
+        margin: 0 30px; }
+      header .menu__item__link:hover {
+        text-decoration: none;
+        color: #203748; }
+      header .menu__item__link--active {
+        background-color: #203748;
+        border-radius: 20px; }
 
 .info__circle {
   background-color: #EFEFEF;
@@ -72,5 +65,42 @@ body {
     padding: 10px 30px;
     font-size: 1.5em;
     margin: 20px 0; }
+
+.social {
+  height: 60px;
+  text-align: center;
+  margin: 50px auto; }
+  .social .fa-2x {
+    color: #EFEFEF; }
+  .social .fa-facebook {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #5071b3; }
+  .social .fa-twitter {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #328cb3; }
+  .social .fa-google-plus {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #c2554c; }
+  .social .fa-pinterest-p {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #b83238; }
+  .social .fa-stumbleupon {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #d15536; }
+  .social .fa-dribbble {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #cc5e8c; }
 
 /*# sourceMappingURL=main.css.map */

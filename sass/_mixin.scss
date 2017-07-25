@@ -1,6 +1,5 @@
-@mixin hover{
-	color: $gris_claro;
-	background-color: $azul;
-	border-radius: 20px;
-	padding: 10px 20px;
+@mixin redes-sociales{
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
